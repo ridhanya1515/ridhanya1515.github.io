@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ridhanya R • Portfolio</title>
+  <meta name="description" content="Ridhanya R — AI & Data Science student. Projects in ML, EDA, and Python." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f172a;          /* slate-900 */
+      --card:#111827;        /* gray-900 */
+      --text:#e5e7eb;        /* gray-200 */
+      --muted:#9ca3af;       /* gray-400 */
+      --accent:#22d3ee;      /* cyan-400 */
+      --accent-2:#a78bfa;    /* violet-400 */
+      --chip:#1f2937;        /* gray-800 */
+      --border:#1f2937;      /* gray-800 */
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;line-height:1.6;background:radial-gradient(1200px 800px at 10% -10%, rgba(34,211,238,.15), transparent 60%),radial-gradient(1200px 800px at 110% 10%, rgba(167,139,250,.15), transparent 60%), var(--bg);color:var(--text)}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{opacity:.9}
+    header{position:sticky;top:0;backdrop-filter:blur(8px);background:rgba(15,23,42,.6);border-bottom:1px solid var(--border);z-index:10}
+    .nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:12px 16px}
+    .brand{font-weight:700;letter-spacing:.3px}
+    .nav a{margin-left:16px;color:var(--text)}
+    .container{max-width:1100px;margin:auto;padding:36px 16px}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0));border:1px solid var(--border);border-radius:16px;padding:24px}
+    h1{font-size:40px;margin:0 0 8px}
+    h2{font-size:28px;margin:0 0 16px}
+    p{margin:0 0 12px;color:var(--muted)}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .chip{background:var(--chip);border:1px solid var(--border);padding:6px 10px;border-radius:999px;font-size:14px;color:var(--text)}
+    .cta{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+    .btn{padding:10px 14px;border-radius:12px;border:1px solid var(--border);background:#131a2b;color:var(--text);font-weight:600}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#0b1020;border:none}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .col-12{grid-column:span 12}
+    .col-6{grid-column:span 6}
+    .project{display:flex;flex-direction:column;gap:8px}
+    .project h3{margin:4px 0}
+    .badges img{height:20px;vertical-align:middle}
+    footer{padding:32px 16px;border-top:1px solid var(--border);text-align:center;color:var(--muted)}
+    .section{margin-top:36px}
+    .list{display:flex;gap:8px;flex-wrap:wrap}
+    .list a{border:1px solid var(--border);background:var(--chip);padding:8px 10px;border-radius:10px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="brand">Ridhanya R</div>
+      <div>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="card">
+        <h1>AI & Data Science Student</h1>
+        <p>Focused on Machine Learning, EDA, and Python. I like building clean, well-documented projects that are easy to run and evaluate.</p>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">Pandas</span>
+          <span class="chip">NumPy</span>
+          <span class="chip">Scikit‑learn</span>
+          <span class="chip">Matplotlib</span>
+          <span class="chip">Seaborn</span>
+          <span class="chip">SQL (basic)</span>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="resume.pdf" target="_blank" rel="noopener">⬇️ View Resume (PDF)</a>
+          <a class="btn" href="https://github.com/ridhanya1515" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/ridhanya-r-0353782a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="mailto:ridhanya111@gmail.com">Email</a>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Quick Bio</h2>
+        <p>2nd‑year B.Tech (AI & Data Science). Preparing for placements with focus on Python, data analysis, and ML fundamentals. Open to internships and hackathons.</p>
+        <div class="list" style="margin-top:10px">
+          <span class="chip">Problem Solving</span>
+          <span class="chip">Data Cleaning</span>
+          <span class="chip">EDA</span>
+          <span class="chip">Model Evaluation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="col-12">
+          <div class="card project">
+            <h3>🌸 Iris Flower Classification</h3>
+            <p>Classifies iris species using Logistic Regression, Decision Tree, and Random Forest with clean EDA and evaluation. Built in Google Colab.</p>
+            <div class="badges">
+              <a href="https://colab.research.google.com/github/ridhanya1515/iris-flower-classification/blob/main/iris_flower_classification.ipynb" target="_blank" rel="noopener">
+                <img alt="Open in Colab" src="https://colab.research.google.com/assets/colab-badge.svg" />
+              </a>
+            </div>
+            <div class="cta">
+              <a class="btn" href="https://github.com/ridhanya1515/iris-flower-classification" target="_blank" rel="noopener">🔗 GitHub Repo</a>
+              <a class="btn" href="https://github.com/ridhanya1515/iris-flower-classification#-how-to-run" target="_blank" rel="noopener">📘 README</a>
+            </div>
+          </div>
+        </div>
+        <!-- Duplicate this card for new projects -->
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="chip">Python</span>
+        <span class="chip">Pandas</span>
+        <span class="chip">NumPy</span>
+        <span class="chip">Scikit‑learn</span>
+        <span class="chip">Matplotlib</span>
+        <span class="chip">Seaborn</span>
+        <span class="chip">Git & GitHub</span>
+        <span class="chip">EDA</span>
+        <span class="chip">Data Cleaning</span>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Best way to reach me: <a href="mailto:ridhanya111@gmail.com">ridhanya111@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/ridhanya-r-0353782a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">Ridhanya R</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Ridhanya R · Built with HTML & CSS · Deployed on GitHub Pages
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
